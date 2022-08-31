@@ -1,6 +1,16 @@
-﻿// Показать вторую цифру трехзначного числа.
+﻿// дано число из отрезка [10, 99], вывести наибольшую цифру числа.
 
-Console.Write("Введите трёхзначное число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-string stringNumber = Convert.ToString(a);
-Console.WriteLine(stringNumber[1]);
+
+int a = new Random().Next(10, 99);
+Console.WriteLine(a);
+int b = a / 10;
+int c = a % 10;
+
+if (b > c)
+{
+    Console.WriteLine(b);
+}
+else
+{
+    Console.WriteLine(c);
+}
